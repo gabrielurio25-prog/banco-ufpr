@@ -36,5 +36,13 @@ LIMITAÇÕES IMPORTANTES
 - O modo offline deve ser validado após a publicação no endereço HTTPS.
 
 
-PROVA UFPR 2024
-O site agora tem atalhos para abrir o caderno oficial de 2024 em nova aba e para consultar o portal oficial do processo seletivo/gabarito. O texto integral da prova não foi duplicado dentro do banco; ele permanece hospedado no NC/UFPR.
+Atualização: adicionada a prova UFPR 2024 ao banco como 90 registros individuais, com filtros e Modo Prova. O enunciado integral e as figuras são consultados no PDF oficial incorporado; alternativas e gabarito foram extraídos do PDF fornecido e devem ser conferidos com o gabarito definitivo.
+
+
+Atualização: questões UFPR 2024 incluídas individualmente no banco, com enunciados no cartão, alternativas, gabarito e link para a página original. A prova 2025 foi preservada.
+
+
+ATUALIZAÇÃO 2024
+- O banco de 2024 mantém as questões de conhecimentos gerais 1–82 e somente a seção de Inglês 83–90.
+- As questões 83–90 foram classificadas como Inglês e receberam alternativas correspondentes à seção inglesa.
+- A edição de 2025 foi preservada.
