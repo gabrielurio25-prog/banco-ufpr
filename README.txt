@@ -34,3 +34,7 @@ LIMITAÇÕES IMPORTANTES
 - Importação direta de PDF ou ZIP não está implementada; a importação de banco é via JSON.
 - Questões, respostas e marcações ficam no armazenamento local do navegador/dispositivo. Exporte backups; elas não sincronizam automaticamente entre aparelhos.
 - O modo offline deve ser validado após a publicação no endereço HTTPS.
+
+
+PROVA UFPR 2024
+O site agora tem atalhos para abrir o caderno oficial de 2024 em nova aba e para consultar o portal oficial do processo seletivo/gabarito. O texto integral da prova não foi duplicado dentro do banco; ele permanece hospedado no NC/UFPR.
