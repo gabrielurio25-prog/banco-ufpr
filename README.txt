@@ -1,30 +1,36 @@
-BANCO UFPR — VERSÃO 0.3 (PWA LOCAL)
+BANCO UFPR — APP INSTALÁVEL (PWA) v1.0
 
-Conteúdo
-- index.html: interface do app
-- questions.js: banco inicial da UFPR 2025
-- Geral.pdf: prova original para consulta de páginas
-- manifest.webmanifest, icon.svg, sw.js: instalação PWA e cache offline
+O pacote contém o aplicativo web progressivo (PWA) pronto para ser publicado em hospedagem HTTPS.
 
-O que funciona nesta versão
+ARQUIVOS PRINCIPAIS
+- index.html: interface e lógica do aplicativo
+- questions.js: banco de questões incluído
+- Geral.pdf: prova original para consultar páginas
+- manifest.webmanifest: nome, ícones e comportamento de instalação
+- sw.js: cache dos arquivos principais para acesso offline após a primeira carga
+- icon-192.png, icon-512.png, apple-touch-icon.png, icon.svg: ícones do app
+
+PUBLICAÇÃO
+Envie TODOS os arquivos desta pasta para a raiz (/) do repositório GitHub Pages, mantendo os nomes. O arquivo index.html deve ficar na raiz, não dentro de uma subpasta. Em Settings > Pages, use Deploy from a branch, branch main e pasta /(root).
+
+INSTALAÇÃO NO IPHONE
+1. Abra https://gabrielurio25-prog.github.io/banco-ufpr/ no Safari.
+2. Toque em Compartilhar.
+3. Escolha Adicionar à Tela de Início.
+4. Confirme o nome Banco UFPR e toque em Adicionar.
+
+INSTALAÇÃO NO ANDROID
+Abra o site no Chrome e use o menu do navegador para instalar/adicionar à tela inicial, se a opção estiver disponível.
+
+RECURSOS ATUAIS
 - filtros por matéria, tema, subtema e texto
-- selecionar alternativa e confirmar antes de revelar a correção
+- responder e confirmar alternativa antes de ver a correção
 - marcar questões para revisar
-- importar banco de questões em formato JSON
-- exportar backup JSON do banco atual
-- tentativa de cache offline via service worker quando hospedado em HTTPS
+- importar questões em JSON e exportar backup JSON
+- cache dos arquivos principais para uso offline depois que forem carregados
 
-Importação JSON
-Aceita um arquivo JSON que seja diretamente uma lista de questões, ou um objeto com uma propriedade "questions" ou "UFPR_QUESTIONS" que contenha a lista. Cada questão precisa ter id e options_extracted. Campos esperados seguem o formato do arquivo questions.js.
-
-Duplicatas
-O campo id é usado como chave. IDs novos são adicionados. IDs existentes são atualizados pelo conteúdo importado. Portanto, use IDs estáveis e únicos para cada questão.
-
-Limitações conhecidas
-- Esta versão importa JSON, não PDF nem ZIP diretamente.
-- Questões importadas com PDFs próprios precisam incluir o PDF no pacote publicado e o campo source_pdf precisa apontar para o arquivo correto; o botão de página original desta versão está orientado ao PDF Geral.pdf da UFPR 2025.
-- Dados e marcações são armazenados no navegador do dispositivo. Use Exportar backup regularmente. Limpar dados do navegador pode apagar o banco importado.
-- Para instalar como app no iPad, publique todos os arquivos em uma hospedagem HTTPS. Abra o endereço no Safari e use Compartilhar > Adicionar à Tela de Início.
-- O Service Worker e o modo instalável precisam ser testados no endereço final HTTPS.
-
-Esta é uma primeira versão funcional para validação, não uma versão publicada.
+LIMITAÇÕES IMPORTANTES
+- Não é um app nativo publicado na App Store/Google Play; é um PWA instalável pela web.
+- Importação direta de PDF ou ZIP não está implementada; a importação de banco é via JSON.
+- Questões, respostas e marcações ficam no armazenamento local do navegador/dispositivo. Exporte backups; elas não sincronizam automaticamente entre aparelhos.
+- O modo offline deve ser validado após a publicação no endereço HTTPS.
